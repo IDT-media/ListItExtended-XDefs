@@ -1,4 +1,4 @@
 ListItExtended-XDefs
 ====================
 
-Gateway module to ListItExtended Cross module / custom field definitions supported by ListItExtended Core team.
+Field extension module for ListItExtended. Applies different kind of Cross module / custom field definitions to ListItExtended. Supported by ListItExtended Core team.
