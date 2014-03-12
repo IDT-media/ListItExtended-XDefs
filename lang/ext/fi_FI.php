@@ -1,0 +1,35 @@
+<?php
+$lang['module_description'] = 'ListItExtended Cross module / field definitions package supported by ListItExtended Core team.';
+$lang['select_one'] = 'Ole hyv&auml; ja valitse yksi';
+$lang['dir'] = 'Hakemisto';
+$lang['allowed'] = 'Sallittu';
+$lang['exclude_prefix'] = 'Pois j&auml;tett&auml;v&auml;t etuliitteet';
+$lang['size'] = 'Koko';
+$lang['max_lenght'] = 'Maksimi pituus';
+$lang['required_field_empty'] = 'Vaadittu kentt&auml; on tyhj&auml;';
+$lang['fielddef_size_help'] = 'M&auml;&auml;rit&auml; kent&auml;lle koko. Esimerkiksi: 20';
+$lang['fielddef_max_lenght_help'] = 'M&auml;&auml;rit&auml; kent&auml;lle pituus. Esimerkiksi: 255';
+$lang['fielddef_FEUDropdown'] = 'FrontEndUsers Alasvetovalikko';
+$lang['fielddef_feu_options'] = 'FEU Ryhm&auml;t';
+$lang['fielddef_feu_dropdown_help'] = 'Ole hyv&auml; ja valitse yksi seuraavista FrontEndUsers Rymist&auml;';
+$lang['fielddef_GalleryDropdown'] = 'Galleria Alasvetovalikko';
+$lang['fielddef_GBFilePicker'] = 'GBFilePicker Tiedostonlataus';
+$lang['fielddef_GBFilePicker_filebrowser'] = 'Tiedostojen selaus p&auml;&auml;ll&auml;';
+$lang['fielddef_GBFilePicker_image'] = 'Oletetaan olevan kuva';
+$lang['fielddef_GBFilePicker_create_dirs'] = 'Salli hakemistojen luonti';
+$lang['fielddef_GBFilePicker_delete'] = 'Salli poistaminen';
+$lang['fielddef_GBFilePicker_show_subdirs'] = 'Salli alihakemistot';
+$lang['fielddef_GBFP_allow_help'] = 'Listaa sallitut tiedostop&auml;&auml;tteet pilkulla erotettuna. Esimerkiksi: pdf,gif,jpeg,jpg (huomaa pienet kirjaimet)';
+$lang['fielddef_GBFP_dir_help'] = 'Hakemistopolku joka l&ouml;ytyy $config[&#039;uploads_url&#039;] alta. Ei hakemiston erotinta loppuun. {$item_id} ja {$item_alias} konvertoidaan arvoiksi.';
+$lang['fielddef_GBFP_exclude_prefix_help'] = 'Listaa etuliitteet pilkulla. Tiedostot mitk&auml; alkavat n&auml;ill&auml; etuliitteill&auml;, j&auml;tet&auml;&auml;n kokonaan pois. Esimerkiksi: thumb_, foo_';
+$lang['fielddef_GBFP_filebrowser_help'] = 'Alasvetovalikkoa k&auml;ytet&auml;&auml;n oletuksena. Laita Tiedostojen selaus p&auml;&auml;lle, mik&auml;li k&auml;ytt&auml;j&auml;lle annetaan lupa selata tiedostoja.';
+$lang['fielddef_GBFP_media_type_help'] = 'Sallii vain tiedostot jotka ovat kuvia. Oletuksena kaikki tiedostot n&auml;ytet&auml;&auml;n.';
+$lang['fielddef_GBFP_delete_help'] = 'Mik&auml;li t&auml;m&auml; on valittuna, voit poistaa tiedostoja ja hakemistoja, vaikkei sinulla olisikaan oikeutta t&auml;h&auml;n.';
+$lang['fielddef_GBFP_create_dirs_help'] = 'Mik&auml;li t&auml;m&auml; on valittuna, voit luoda hakemistoja, vaikkei sinulla olisikaan oikeutta t&auml;h&auml;n.';
+$lang['fielddef_GBFP_show_subdirs_help'] = 'Jos valittu, k&auml;ytt&auml;j&auml; voi selata alihakemistoja.';
+$lang['fielddef_ColorPicker'] = 'V&auml;rivalitsin';
+$lang['utma'] = '156861353.1847170709.1358013959.1358013959.1358013959.1';
+$lang['utmz'] = '156861353.1358013959.1.1.utmccn=(direct)|utmcsr=(direct)|utmcmd=(none)';
+$lang['utmc'] = '156861353';
+$lang['utmb'] = '156861353';
+?>
