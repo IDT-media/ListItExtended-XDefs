@@ -19,6 +19,12 @@ $lang['fielddef_max_lenght_help'] = 'Specify maximum lenght of the field. For ex
 $lang['fielddef_FEUDropdown'] = 'FrontEndUsers Dropdown';
 $lang['fielddef_feu_options'] = 'FEU Groups';
 $lang['fielddef_feu_dropdown_help'] = 'Please select one of available FrontEndUsers Groups';
+$lang['fielddef_feu_identifier'] = 'FEU Identifier';
+$lang['fielddef_feu_identifier_help'] = 'Please select a identifier for FEU values, by default User ID will be used as Option value';
+$lang['fielddef_feu_id'] = 'FEU User ID';
+$lang['fielddef_feu_username'] = 'FEU User Username';
+$lang['fielddef_feu_properties'] = 'FEU User Properties';
+$lang['fielddef_feu_properties_help'] = 'Select a FEU property which will be displayed as Dropdown option, by default "username" will be displayed';
 
 # GalleryDropdown
 $lang['fielddef_GalleryDropdown'] = 'Gallery Dropdown';
