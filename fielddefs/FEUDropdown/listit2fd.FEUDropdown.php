@@ -1,7 +1,7 @@
 <?php
 #-------------------------------------------------------------------------
 #
-# Tapio Löytty, <tapsa@orange-media.fi>
+# Tapio LÃ¶ytty, <tapsa@orange-media.fi>
 # Web: www.orange-media.fi
 #
 # Goran Ilic, <uniqu3e@gmail.com>
@@ -65,6 +65,36 @@ class listit2fd_FEUDropdown extends ListIt2FielddefBase
             return $options;
         }
     }
+
+    // set available FEU identifier options
+    public function GetFEUIdentifier() {
+
+        $options = array(
+            'id' => $this->ModLang('fielddef_feu_id'),
+            'username' => $this->ModLang('fielddef_feu_username')
+            );
+
+        return $options;
+    }
+
+    // set available FEU identifier options
+    public function GetFEUProperties() {
+
+        $FEU = cmsms()->GetModuleInstance('FrontEndUsers');
+        if(is_object($FEU)) {
+            
+            $properties = $FEU->GetPropertyDefns();
+
+            if($properties) {
+                $options = array_merge(array('' => $this->ModLang('select_one')));
+                foreach($properties as $key => $val) {
+                    $options[$key] = $val['prompt'];
+                }
+            }
+
+            return $options;
+        }
+    }
     
     // get list of users from FEU module based on selected group
     public function GetFEUUserList() {
@@ -72,15 +102,19 @@ class listit2fd_FEUDropdown extends ListIt2FielddefBase
         $FEU = cmsms()->GetModuleInstance('FrontEndUsers');
         if(is_object($FEU)) {
             
-            // GetUsersInGroup() is deprecated but GetFullUsersInGroup() seems to have a bug, 
-            // change this after FEU BR #8753 http://dev.cmsmadesimple.org/bug/view/8753 is confirmed and fixed 
-            
-            $users = $FEU->GetUsersInGroup($this->GetOptionValue('feu_options'));
+            $users = $FEU->GetFullUsersInGroup($this->GetOptionValue('feu_options'));
             
             if($users) {
                 $options = array_merge(array('' => $this->ModLang('select_one')));
                 foreach($users as $option) {
-                    $options[$option['id']] = $option['username'];
+
+                    if ($this->GetOptionValue('feu_property')) {
+                        $val = $FEU->GetUserPropertyFull($this->GetOptionValue('feu_property'), $option['id']);
+                    } else {
+                        $val = $option['username'];
+                    }
+
+                    $options[$option[$this->GetOptionValue('feu_identifier')]] = $val;
                 }
             }
             
